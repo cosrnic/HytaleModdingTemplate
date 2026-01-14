@@ -1,0 +1,19 @@
+{
+  "Group": "Example",
+  "Name": "HytaleMod",
+  "Version": "0.0.1-earlyaccess",
+  "Description": "Example Hytale Mod",
+  "Authors": [
+    {
+      "Name": "You"
+    }
+  ],
+  "Website": "https://example.com",
+  "ServerVersion": "*",
+  "Dependencies": {
+  },
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "org.example.hytalemod.HytalePlugin",
+  "IncludesAssetPack": true
+}
