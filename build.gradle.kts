@@ -13,7 +13,7 @@ val os = System.getProperty("os.name").lowercase()
 val hytalePath = when {
     "linux" in os -> "${System.getenv("HOME")}/.var/app/com.hypixel.HytaleLauncher/data/Hytale/install/release/package/game/latest"
     "windows" in os -> "${System.getenv("APPDATA")}/Hytale/install/release/package/game/latest"
-    "mac" in os -> "~/Library/Application Support/Hytale/install/release/package/game/latest"
+    "mac" in os -> "${System.getProperty("user.home")}/Library/Application Support/Hytale/install/release/package/game/latest"
     else -> throw GradleException("Unsupported OS: $os")
 }
 
@@ -35,7 +35,7 @@ idea.project.settings {
         create<org.jetbrains.gradle.ext.Application>("RunServer") {
             mainClass = "com.hypixel.hytale.Main"
             moduleName = project.idea.module.name + ".main"
-            programParameters = "--allow-op --disable-sentry --assets=$hytalePath/Assets.zip --mods=${file("src/main/").absolutePath} --auth-mode authenticated"
+            programParameters = "--allow-op --disable-sentry --assets=\"$hytalePath/Assets.zip\" --mods=${file("src/main/").absolutePath} --auth-mode authenticated"
             workingDirectory = file("$projectDir/run").absolutePath
         }
     }
