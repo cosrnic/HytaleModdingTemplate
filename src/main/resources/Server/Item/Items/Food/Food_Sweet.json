@@ -1,0 +1,75 @@
+{
+  "TranslationProperties": {
+    "Name": "example.items.Food_Sweet.name",
+    "Description": "example.items.Food_Sweet.description"
+  },
+  "Parent": "Template_Food",
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "Quality": "Common",
+  "Icon": "Icons/ItemsGenerated/Food_Sweet.png",
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Resources/Ingredients/Sweet.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ingredients/Sweet_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#8d7661"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Sugar",
+        "Quantity": 2
+      },
+      {
+        "ResourceTypeId": "Fuel",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Baked"
+        ]
+      }
+    ],
+    "TimeSeconds": 2
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Instant_Heal_T1"
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Food_Stamina_Restore_Sweet"
+        }
+      ]
+    }
+  },
+  "Scale": 1,
+  "MaxStack": 25,
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 1.5,
+    "Rotation": [
+      22.5,
+      54,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -4
+    ]
+  }
+}

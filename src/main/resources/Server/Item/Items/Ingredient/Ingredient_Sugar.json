@@ -1,0 +1,69 @@
+{
+  "TranslationProperties": {
+    "Name": "example.items.Ingredient_Sugar.name"
+  },
+  "Parent": "Template_Food",
+  "Icon": "Icons/ItemsGenerated/Food_Salt.png",
+  "ResourceTypes": [
+    {
+      "Id": "Foods"
+    }
+  ],
+  "Quality": "Common",
+  "Consumable": false,
+  "Interactions": {},
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Ingredients/Salt.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Ingredients/Salt_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Food_Medium",
+    "ParticleColor": "#b7c0d3",
+    "CustomModelScale": 0.6
+  },
+  "Scale": 1,
+  "IconProperties": {
+    "Scale": 0.9,
+    "Rotation": [
+      5,
+      77,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -6
+    ]
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Plant_Reeds_Marsh",
+        "Quantity": 1
+      }
+    ],
+    "TimeSeconds": 1,
+    "Output": [
+      {
+        "ItemId": "Ingredient_Sugar",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Ingredients"
+        ]
+      }
+    ],
+    "OutputQuantity": 4
+  },
+  "MaxStack": 25,
+  "DropOnDeath": true
+}

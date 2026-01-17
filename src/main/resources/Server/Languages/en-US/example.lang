@@ -1,1 +1,5 @@
+items.Ingredient_Sugar.name=Sugar
+items.Food_Sweet.name=Sweet
+items.Food_Sweet.description=[TMP] Instantly restores <color is="#ffffff">5%</color> health and <color is="#ffffff">30%</color> stamina
+
 customUI.example.title=Hello!

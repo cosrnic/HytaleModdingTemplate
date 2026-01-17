@@ -9,3 +9,5 @@ A Hytale modding template with Gradle KTS with basic features
 - [x] Example Command
 - [x] Example HUD
 - [x] Example Page
+- [x] Example Item
+- [x] Example Food
